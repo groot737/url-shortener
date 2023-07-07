@@ -124,6 +124,7 @@ h2{
     grid-row-gap: 22px;
     justify-content: center;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 .box > .result{
@@ -131,4 +132,50 @@ h2{
 }
 .box > .result > .result-box{
     width: 570px;
+}
+
+@media screen and (max-width: 639px){
+    .main-container{
+        width: 95%;
+    }
+    .form {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    input{
+        width: 100%;
+    }
+    .result{
+        width: 100%;
+    }
+    .result-box{
+        width: 99%;
+    }
+    .history-container{
+        width: 99%;
+    }
+    .box{
+        justify-content: unset;
+    }
+    .history-container > .box{
+        width: 100%;
+    }
+    .box > .result{
+        width: 100%;
+    }
+    .box > .result > .result-box{
+        width: 99%;
+    }
+}
+
+@media screen and (max-width: 435px){
+    .result{
+        height: 100px;
+    }
+    .result-box{
+        margin-top: -30px;
+        gap:15px;
+        flex-wrap: wrap;
+    }
 }
