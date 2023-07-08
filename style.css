@@ -62,6 +62,7 @@ input::placeholder{
 
 .result{
     width: 603px;
+    visibility: hidden;
     height: 44px;
     border-radius: 5px;
     background: #0C0927;
@@ -76,7 +77,9 @@ input::placeholder{
     display: flex;
     justify-content: space-between;
 }
-
+.box > .result{
+    visibility: visible;
+}
 .result-box > .url{
     color: #E4E4F7;
     font-size: 15px;
@@ -84,7 +87,7 @@ input::placeholder{
     line-height: normal;
 }
 
-#dispaly-url{
+#display-url{
     color: #FFF;
     font-size: 15px;
     font-weight: 700;
@@ -110,7 +113,6 @@ h2{
     font-weight: 700;
     line-height: normal;
 }
-
 .history-container > .box{
     margin-top: 35px;
     width: 603px;
@@ -118,7 +120,10 @@ h2{
     border-radius: 10px;
     background: #050513;
 }
-
+#action-box{
+    display: flex;
+    gap: 27px;
+}
 .box{
     display: grid;
     grid-row-gap: 22px;
